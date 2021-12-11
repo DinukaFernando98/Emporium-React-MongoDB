@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost:27017/emporium3', {
+mongoose.connect(process.env.MONGODB_URL || 'mongodb+srv://admin:admin@portfolio.fuhu3.mongodb.net/emporium?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
